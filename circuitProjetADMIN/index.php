@@ -240,6 +240,7 @@
             <ol class="carousel-indicators">
                 <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
                 <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+				<li data-target="#carousel-example-generic" data-slide-to="2"></li>
             </ol>
 
 
@@ -250,7 +251,7 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-6">
                                     <div class="block">
-                                        <img class="app-img img-responsive" src="images/slider/1.png" alt="">
+                                        <img class="app-img img-responsive" src="images/UK-French-Flags-1.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-md-offset-1 col-sm-6">
@@ -282,7 +283,38 @@
                             <div class="row">
                                 <div class="col-md-4 col-sm-6">
                                     <div class="block">
-                                        <img class="app-img img-responsive" src="images/slider/2.png" alt="">
+                                        <img class="app-img img-responsive" src="images/walking-tours-iconic1.jpg" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-offset-1 col-sm-6">
+                                    <div class="block">
+                                        <h1>
+                                            Samsung Galaxy S6 edge <br> designed to be perfect.
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nemo, corporis ipsum soluta nobis ea!
+                                        </p>
+
+                                        <ul class="download-btn">
+                                            <li>
+                                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i>Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default btn-red"><i class="fa fa-shopping-cart"></i>BUY NOW</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+				
+				<div class="item">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="block">
+                                        <img class="app-img img-responsive" src="images/ZSL-London-Zoo.jpg" alt="">
                                     </div>
                                 </div>
                                 <div class="col-md-6 col-md-offset-1 col-sm-6">
@@ -320,17 +352,17 @@
         <div class="container">
             <h1 class="title">Services</h1>
             <hr class="divider" style="width:50%;border-color:#CCC;">
-            <p class="text-center">Lorem ipsum dolor sit amet</p>
+            <p class="text-center">Vous exploitez une entreprise touristique québécoise et rêvez d’être connu de plus de sept millions de touristes du monde entier? N'attendez plus pour réaliser votre rêve! Inscrivez-vous sur notre site dès maintenant! </p>
             <div class="service-wrapper">
                 <div class="row">
                     <div class="col-md-3 col-sm-6">
                         <div class="block wow fadeInRight" data-wow-delay="1s">
                             <div class="icon">
-                               <i class="fa fa-truck"></i>
+                               <i class="fa fa-plane"></i></i>
                             </div>
                             
-                            <h3>Delivery service</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                            <h3>Transportation</h3>
+                            <p>Notre équipe met à votre disposition le meilleur transport pour assurer au maximum votre confort.</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -338,8 +370,8 @@
                             <div class="icon">
                                 <i class="fa  fa-list"></i>
                             </div>
-                            <h3>200+ Products</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                            <h3>200+ Produits</h3>
+                            <p>Circuits en Europe, Afrique, Asie et Amérique. Découvrez nos offres de voyage!</p>
                         </div>
                     </div>
                     <div class="col-md-3 col-sm-6">
@@ -347,17 +379,17 @@
                             <div class="icon">
                                 <i class="fa  fa-shopping-cart"></i>
                             </div>
-                            <h3>Online shopping</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                            <h3>Réservation et paiement en ligne</h3>
+                            <p>Si vous revez d'un voyage inoubliable et que vous disposez d'un compte Paypal, n'attendez plus!</p>
                         </div>
                     </div>
                      <div class="col-md-3 col-sm-6">
                         <div class="block wow fadeInRight" data-wow-delay="1.9s">
                             <div class="icon">
-                                <i class="fa  fa-cc-visa"></i>
+                                <i class="fa fa-cc-paypal"></i>
                             </div>
-                            <h3>All Cards accepted</h3>
-                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                            <h3>PayPal accepté</h3>
+                            <p>Faites votre réservation en toute securité!</p>
                         </div>
                     </div>
                 </div>
@@ -375,9 +407,9 @@
 
     <section id="products">
         <div class="container">
-            <h1 class="title">Products</h1>
+            <h1 class="title">Produits</h1>
             <hr class="divider" style="width:50%;">
-            <p class="text-center">Lorem ipsum dolor sit amet</p>
+            <h2 class="text-center">Découvrez nos circuits:</h2>
             <div class="row" style="margin-top:40px;">
                 <div class="col-sm-3 wow fadeInLeft product" data-wow-delay=".8s">
                     <img src="images/products/1.jpg" alt="iPhone 6" class="img-responsive">
@@ -568,17 +600,14 @@
                         <div class="row">
                             <div class="col-md-12 col-sm-12">
                                 <div class="block text-center">
-                                    <img class="img-responsive img-circle center-block" src="images/testimonials/1.jpg" alt="" style="height:100px;">
+                                    <img class="img-responsive img-circle center-block" src="images/testimonials/2.jpg" alt="" style="height:100px;">
                                 </div>
                             </div>
                             <div class="col-md-12 col-sm-12 text-center">
                                 <div class="block">
-                                    <h3 style="color:#ff0f37;" class="text-center">Absolutely Brilliant - Julia Doe</h3>
+                                    <h3 style="color:#ff0f37;" class="text-center">Un voyage extraordinaire - Julia Savoie</h3>
                                     <p style="color:#111;font-size:14px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
-                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
-                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
-                                    </p>
+                                        Il n’y a rien à dire. L’accueil dans la magnifique maison d’hôtes Nadir Home était superbe, on n’attendait pas tant. La qualité de la nourriture était extraordinaire, les hôtes très gentils et disponibles. Nous avons apprécié habiter dans ce quartier tranquille tout en étant proche du centre de Marrakech. Nous avons passé une excellente semaine à Marrakech. Merci !
                                 </div>
                             </div>
                         </div>
@@ -596,11 +625,9 @@
                             </div>
                             <div class="col-md-12 col-sm-12 text-center">
                                 <div class="block">
-                                    <h3 style="color:#ff0f37;" class="text-center">Amazing Service! - John Doe</h3>
+                                    <h3 style="color:#ff0f37;" class="text-center">Très bons souvenirs! - Mark Deloit</h3>
                                     <p style="color:#111;font-size:14px;">
-                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
-                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
-                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                        Un pays en plein développement, entre 2 âges pourrions-nous dire, qui mérite le détour. Liljana, notre guide, pétrie de culture et engagée dans le développement agricole a su nous faire partager l’amour de son pays. Nous avons particulièrement aimé les rencontres avec les habitants et acteurs économiques, celles organisées, mais aussi celles plus impromptues, en prenant le temps de flâner. C’est un circuit qui permet de découvrir et comprendre les contrastes du développement passé et actuel des cités antiques, des périodes byzantines et ottomanes, du régime Hoxa, et maintenant de l’ouverture vers l’Europe…. Un accueil très chaleureux des Albanais tout au long du voyage.
                                     </p>
                                 </div>
                             </div>
@@ -620,9 +647,9 @@
     <section id="contact" class="wow fadeInUp bgc-one-top mts-section-wrapper mts-contact-section" data-wow-delay=".8s" style="margin-top:50px;margin-bottom:50px;">
         <div class="container">
             <div class="row">
-                <h1 class="title">Contact us</h1>
+                <h1 class="title">Contactez nous</h1>
                 <hr class="divider" style="width:50%;">
-                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <p class="text-center">Contactez nous pour apprendre plus sur nos offres magnifiques.</p>
                 <!-- Section Header End -->
 
                 <div class="mts-contact-details" style="margin-top:30px;">
@@ -634,23 +661,24 @@
                         <div id="contact-result"></div>
                         <div id="contact-form">
                             <div class="mts-input-name mts-input-fields">
-                                <input type="text" name="name" id="name" placeholder="Name">
+                                <input type="text" name="name" id="name" placeholder="Nom">
                             </div>
 
                             <div class="mts-input-email mts-input-fields">
-                                <input type="email" name="email" id="email" placeholder="Email">
+                                <input type="email" name="email" id="email" placeholder="Courriel">
                             </div>
 
                             <div class="mts-input-message mts-input-fields">
                                 <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
                             </div>
 
-                            <input type="submit" value="SEND MESSAGE" id="submit-btn">
+                            <input type="submit" value="ENVOYER MESSAGE" id="submit-btn">
                         </div>
                     </div>
                     <div class="col-md-6 col-sm-6 col-xs-12">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ducimus in rerum fugiat deserunt laboriosam tempore velit, eaque provident incidunt quisquam. Qui soluta accusantium pariatur obcaecati, harum molestiae eum, repellendus.</p>
-                        <ul>
+                        <p>Laissez-nous un message en complétant ce formulaire, nous y répondrons dans les meilleurs délais. 
+
+Pour vos questions relatives à un voyage, un projet de développement ou simplement pour contacter l'un de nos membres, rendez-vous sur la fiche correspondante.</p>
                             <li><i class="fa fa-home"></i>01011 Road ave.</li>
                             <li><i class="fa fa-phone"></i>(+1) 012 3456</li>
                             <li><i class="fa fa-envelope-o"></i>john@store.com</li>
