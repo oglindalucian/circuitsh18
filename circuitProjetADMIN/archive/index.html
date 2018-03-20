@@ -1,0 +1,684 @@
+<!DOCTYPE html>
+<html class="no-js">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Store One page Bootstrap theme</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <!-- <link rel="stylesheet" href="css/font-awesome.min.css">  -->
+        <link rel="stylesheet" href="css/main.css">
+		<link rel="stylesheet" href="css/administrateur.css">
+		
+	 <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">  -->
+			<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+			<!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script> -->
+		
+		
+		
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="css/responsive.css">
+        <script src="js/vendor/modernizr-2.6.2.min.js"></script>
+        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.10.2.min.js"><\/script>')</script>
+        <script src="js/bootstrap.min.js"></script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+		<script src="js/global.js"></script>
+        <script src="js/wow.min.js"></script>
+		 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <script>
+         new WOW(
+            ).init();
+        </script>
+
+        <script>
+          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+          })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+          ga('create', 'UA-57708809-1', 'auto');
+          ga('send', 'pageview');
+
+        </script>
+
+    </head>
+    <body>
+
+
+	<!-- <div id="header"> -->
+     <header>
+	 <?php include 'menu.php';?>
+	    <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
+		  <!-- <div class="container-fluid"> -->
+			<!-- <div class="navbar-header"> -->
+			
+                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> -->
+                    <!-- <span class="sr-only">Toggle navigation</span> -->
+                    <!-- <span class="icon-bar"></span> -->
+                    <!-- <span class="icon-bar"></span> -->
+                    <!-- <span class="icon-bar"></span> -->
+                <!-- </button> -->
+           
+			  <!-- <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a> -->
+			<!-- </div> -->
+			<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
+			<!-- <ul class="nav navbar-nav"> -->
+			  <!-- <li class="active"><a href="#home">Accueil</a></li> -->
+			  <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a> -->
+				<!-- <ul class="dropdown-menu"> -->
+				  <!-- <li><a href="#services">Nos services</a></li> -->
+				  <!-- <li><a href="#products">Nos produits</a></li> -->
+				  <!-- <li><a href="#testimonials">FAQ</a></li> -->
+				  <!-- <li><a href="#contact">Contact</a></li> -->
+				<!-- </ul> -->
+			  <!-- </li> -->
+			  <!-- <li><a href="#">Page 2</a></li> -->
+			<!-- </ul> -->
+			<!-- <ul class="nav navbar-nav navbar-right"> -->
+			  <!-- <li><a href="#"><i class="fa fa-cart-arrow-down" style="font-size:24px;color:red"></i> Panier</a></li> -->
+			  <!-- <li><a href="#" onClick="rendreVisible('admin'); rendreInvisible('accueil')"><i class="fa fa-sign-in" style="font-size:24px;color:red"></i> Connexion</a></li> -->
+			<!-- </ul> -->
+			<!-- </div> -->
+		  <!-- </div> -->
+		<!-- </nav> -->
+    </header> 
+   <!-- </div> -->
+	
+<!--start admin-->
+<div id="admin">
+	<div id="menuAdmin">
+		<br><br><br>
+		<span onClick="rendreInvisible('admin'); rendreVisible('accueil')"><i class="fa fa-close" style="font-size:36px"></i> Fermer</span>
+		<h1 style="text-align: center;">TABLEAU DE BORD DE L'ADMINISTRATEUR</h1>
+				
+				<div id="management" style="text-align: center;">
+					<input type="button" value="Gestion des circuits" onClick="rendreInvisibleTous(); rendreVisible('divCircuits'); rendreVisible('menuAdmin');">  <!--rendreVisible('divCircuits'); -->
+					<input type="button" value="Gestion des usagers" onClick="rendreInvisibleTous(); rendreVisible('divUsagers');  ">
+					<input type="button" value="Gestion des rabais" onClick="rendreInvisibleTous(); rendreVisible('divRabais');  ">
+				</div>
+				
+				<br>
+	</div>
+			<div id="divCircuits" class="tdba" style="text-align: center;" >
+				<br>
+				<span style="text-align: right;" onClick="rendreInvisible('divCircuits')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
+				<h2>Gestion des circuits</h2>
+				<br>
+				<input type="button" value="Créer un circuit" onClick=" rendreVisible('divEnregCircuit'); rendreInvisible('divCircuits'); rendreInvisibleTous();">
+				<input type="button" value="Lister les circuits" onClick=" lister();$('#contenu').show(); rendreInvisible('divCircuits'); rendreInvisibleTous();">
+				<input type="button" value="Modifier un circuit" onClick=" rendreVisible('divFiche'); rendreInvisible('divCircuits'); rendreInvisibleTous();">
+				<br>
+				<br>
+			</div>
+			
+			<br>
+			<div id="divUsagers" class="tdba" style="text-align: center;">
+				<br>
+				<span style="text-align: right;" onClick="rendreInvisible('divUsagers')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
+				<h2>Gestion des usagers</h2>
+				<br>
+				<input type="button" value="Lister les usagers(R)" onClick="rendreInvisible('divUsagers'); rendreInvisibleTous();">
+				<input type="button" value="Réactiver un usager(U)" onClick="rendreInvisible('divUsagers'); rendreInvisibleTous();">
+				<input type="button" value="Désactiver un usager(U)" onClick="rendreInvisible('divUsagers'); rendreInvisibleTous();">
+				<br>
+				<br>
+			</div>
+			
+			<br>
+			<div id="divRabais" class="tdba" style="text-align: center;">
+				<br>
+				<span style="text-align: right;" onClick="rendreInvisible('divRabais')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
+				<h2>Gestion des rabais</h2>
+				<br>
+				<input type="button" value="Enregistrer un rabais(C)" onClick="rendreInvisible('divRabais'); rendreInvisibleTous();">
+				<input type="button" value="Lister les rabais(R)" onClick="rendreInvisible('divRabais'); rendreInvisibleTous();">
+				<input type="button" value="Désactiver un rabais(U)" onClick="rendreInvisible('divRabais'); rendreInvisibleTous();">
+				<br>
+				<br>
+			</div>
+			
+			
+			<!-- FORMULAIRES -->
+			
+		<div id="divEnregCircuit">
+			<div class="container">
+				<form id="formEnregCircuit">
+					<br>
+					<span onClick="rendreInvisible('divEnregCircuit')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
+					<h3>Créer un circuit</h3><br>
+					<table border=0 class="table-striped table-hover table-responsive">
+						<tr><td><label for="nomCircuit">Nom du circuit: </label></td><td><input type="text" id="nomCircuit" name="nomCircuit"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="nbPlacesMinimum">Nombre minimum de places: </label></td><td><input type="text" id="nbPlacesMinimum" name="nbPlacesMinimum"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="nbPlacesMaximum">Nombre maximum de places: </label></td><td><input type="text" id="nbPlacesMaximum" name="nbPlacesMaximum"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="dateDepart">Date de départ: </label></td><td><input type="date" id="dateDepart" name="dateDepart"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="dateArrivee">Date de retour: </label></td><td><input type="date" id="dateArrivee" name="dateArrivee"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="prixCircuit">Prix du circuit: </label></td><td><input type="text" id="prixCircuit" name="dateRetour"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="guide">Nom du guide: </label></td><td><input type="text" id="guide" name="guide"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="transport">Transport: </label></td><td><input type="text" id="transport" name="transport"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="etat">Circuit actif: </label></td><td><input type="checkbox" id="etat" name="etat"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><label for="photoCircuit">Image de circuit: </label></td><td><input type="file" id="photoCircuit" name="photoCircuit"></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+						<tr><td><input type="button" value="Créer le circuit" onClick="enregistrerCircuit();"></td><td>
+					</form>				
+								<input type="button" value="Ajouter une étape" onClick=" ajouterEtape(); "></td></tr>
+						<tr><td><br></td><td><br></td></tr>
+					</table>
+			</div>
+		</div>
+			
+			<div id="divFiche">
+				<form id="formFiche">
+					<br>	
+					<span onClick="rendreInvisible('divFiche')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
+					<h3>Modifier un circuit</h3>
+					<br>
+				<table border=0 class="table-striped table-hover table-responsive">
+					<tr><td><label for="idCircuitF">Numéro du circuit: </label></td><td><input type="text" id="idCircuitF" name="idCircuitF"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><input type="button" value="Envoyer" onClick=" obtenirFiche(); "></td><td></td></tr>					
+				</table>
+				</form>
+			</div>
+			
+			<div id="contenu" style="position:absolute;top:50%;left:20%;"></div>
+			
+			<div id="messages" style="position:absolute;top:2%;left:80%;color:red;">
+			</div>
+			
+			<div id="divFormFiche" style="position:absolute;top:10%;left:50%; display:none">
+				<form id="formFicheC">
+					<h3></h3><br><br>
+					<span onClick="rendreInvisible('divFormFiche')"><i class="fa fa-close" style="font-size:16px"></i></span><br>
+					<input type="hidden" id="idCircuitFC" name="idCircuitFC">
+				<table border=0 class="table-striped table-hover table-responsive">
+					<tr><td><label for="nomCircuitFC">Nom du circuit: </label></td><td><input type="text" id="nomCircuitFC" name="nomCircuitFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="nbPlacesMinimumFC">Nombre minimum de places: </label></td><td><input type="text" id="nbPlacesMinimumFC" name="nbPlacesMinimumFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="nbPlacesMaximumFC">Nombre maximum de places: </label></td><td><input type="text" id="nbPlacesMaximumFC" name="nbPlacesMaximumFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="dateDepartFC">Date de départ: </label></td><td><input type="date" id="dateDepartFC" name="dateDepartFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="dateArriveeFC">Date de retour: </label></td><td><input type="date" id="dateArriveeFC" name="dateArriveeFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="prixCircuitFC">Prix du circuit: </label></td><td><input type="text" id="prixCircuitFC" name="dateRetourFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="guideFC">Nom du guide: </label></td><td><input type="text" id="guideFC" name="guideFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="transportFC">Transport: </label></td><td><input type="text" id="transportFC" name="transportFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="etatFC">Circuit actif: </label></td><td><input type="checkbox" id="etatFC" name="etatFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><label for="photoCircuitFC">Image de circuit: </label></td><td><input type="file" id="photoCircuitFC" name="photoCircuitFC"></td></tr>
+					<tr><td><br></td><td><br></td></tr>
+					<tr><td><input type="button" value="Modifier" onClick="modifier();"></td><td></td></tr>
+				</table>
+				</form>
+			</div>
+		</div>
+<!--fin admin-->
+
+<!--start accueil-->
+<div id="accueil">
+    <section id="home">
+        <div class="container">
+
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="block">
+                                        <img class="app-img img-responsive" src="images/slider/1.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-offset-1 col-sm-6">
+                                    <div class="block">
+                                        <h1>
+                                            NEW in our store,<br> iPhone 6.
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nemo, corporis ipsum soluta nobis ea!
+                                        </p>
+
+                                        <ul class="download-btn">
+                                            <li>
+                                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i>Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default btn-red"><i class="fa fa-shopping-cart"></i>BUY NOW</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+
+                <div class="item">
+                        <div class="carousel-caption">
+                            <div class="row">
+                                <div class="col-md-4 col-sm-6">
+                                    <div class="block">
+                                        <img class="app-img img-responsive" src="images/slider/2.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="col-md-6 col-md-offset-1 col-sm-6">
+                                    <div class="block">
+                                        <h1>
+                                            Samsung Galaxy S6 edge <br> designed to be perfect.
+                                        </h1>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eos nemo, corporis ipsum soluta nobis ea!
+                                        </p>
+
+                                        <ul class="download-btn">
+                                            <li>
+                                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i>Details</a>
+                                            </li>
+                                            <li>
+                                                <a href="#" class="btn btn-default btn-red"><i class="fa fa-shopping-cart"></i>BUY NOW</a>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+
+        </div>
+        </div>
+    </section>
+
+
+
+
+    <section id="services">
+        <div class="container">
+            <h1 class="title">Services</h1>
+            <hr class="divider" style="width:50%;border-color:#CCC;">
+            <p class="text-center">Lorem ipsum dolor sit amet</p>
+            <div class="service-wrapper">
+                <div class="row">
+                    <div class="col-md-3 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1s">
+                            <div class="icon">
+                               <i class="fa fa-truck"></i>
+                            </div>
+                            
+                            <h3>Delivery service</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1.3s">
+                            <div class="icon">
+                                <i class="fa  fa-list"></i>
+                            </div>
+                            <h3>200+ Products</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1.6s">
+                            <div class="icon">
+                                <i class="fa  fa-shopping-cart"></i>
+                            </div>
+                            <h3>Online shopping</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                        </div>
+                    </div>
+                     <div class="col-md-3 col-sm-6">
+                        <div class="block wow fadeInRight" data-wow-delay="1.9s">
+                            <div class="icon">
+                                <i class="fa  fa-cc-visa"></i>
+                            </div>
+                            <h3>All Cards accepted</h3>
+                            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente, amet.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+   
+    
+
+
+
+
+
+    <section id="products">
+        <div class="container">
+            <h1 class="title">Products</h1>
+            <hr class="divider" style="width:50%;">
+            <p class="text-center">Lorem ipsum dolor sit amet</p>
+            <div class="row" style="margin-top:40px;">
+                <div class="col-sm-3 wow fadeInLeft product" data-wow-delay=".8s">
+                    <img src="images/products/1.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>iPhone 6S</h4>
+                            <p>New, brilliant, simple</p>
+                        </div>
+                        <div class="col-sm-4 price">500 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInDown product" data-wow-delay=".8s">
+                    <img src="images/products/2.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>Samsung Galaxy S6</h4>
+                            <p>New model from samsung</p>
+                        </div>
+                        <div class="col-sm-4 price">499 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInDown product" data-wow-delay=".8s">
+                    <img src="images/products/3.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>Sony Xperia Z5</h4>
+                            <p>For all taste</p>
+                        </div>
+                        <div class="col-sm-4 price">487 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInRight product" data-wow-delay=".8s">
+                    <img src="images/products/4.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>PlayStation 4</h4>
+                            <p>Gaming console by Sony</p>
+                        </div>
+                        <div class="col-sm-4 price">560 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInLeft product" data-wow-delay=".8s">
+                    <img src="images/products/5.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>Xbox One</h4>
+                            <p>Console by Microsoft</p>
+                        </div>
+                        <div class="col-sm-4 price">540 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInUp product" data-wow-delay=".8s">
+                    <img src="images/products/6.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>iPhone Charger</h4>
+                            <p>Accessory product</p>
+                        </div>
+                        <div class="col-sm-4 price">20 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInUp product" data-wow-delay=".8s">
+                    <img src="images/products/7.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>ROG laptop</h4>
+                            <p>Notebook from ASUS</p>
+                        </div>
+                        <div class="col-sm-4 price">1500 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-sm-3 wow fadeInRight product" data-wow-delay=".8s">
+                    <img src="images/products/8.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>iMac</h4>
+                            <p>New PC from Apple</p>
+                        </div>
+                        <div class="col-sm-4 price">3500 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="text-center">
+                    <ul class="pagination pagination-lg wow fadeInUp" data-wow-delay="1.1s">
+                        <li class="active"><a href="#">1</a></li>
+                        <li><a href="#">2</a></li>
+                        <li><a href="#">3</a></li>
+                        <li><a href="#">4</a></li>
+                        <li><a href="#">5</a></li>
+                        <li><a href="#">6</a></li>
+                        <li><a href="#">7</a></li>
+                        <li><a href="#">8</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="testimonials">
+        <div id="carousel-example-generict" class="carousel slide" data-ride="carousel">
+
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generict" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generict" data-slide-to="1"></li>
+            </ol>
+
+
+            <div class="carousel-inner" role="listbox">
+
+                <div class="item active">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="block text-center">
+                                    <img class="img-responsive img-circle center-block" src="images/testimonials/1.jpg" alt="" style="height:100px;">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <div class="block">
+                                    <h3 style="color:#ff0f37;" class="text-center">Absolutely Brilliant - Julia Doe</h3>
+                                    <p style="color:#111;font-size:14px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="item">
+                    <div class="carousel-caption">
+                        <div class="row">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="block text-center">
+                                    <img class="img-responsive img-circle center-block" src="images/testimonials/1.jpg" alt="" style="height:100px;">
+                                </div>
+                            </div>
+                            <div class="col-md-12 col-sm-12 text-center">
+                                <div class="block">
+                                    <h3 style="color:#ff0f37;" class="text-center">Amazing Service! - John Doe</h3>
+                                    <p style="color:#111;font-size:14px;">
+                                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                        lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisqua
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </section>
+
+
+
+
+    <section id="contact" class="wow fadeInUp bgc-one-top mts-section-wrapper mts-contact-section" data-wow-delay=".8s" style="margin-top:50px;margin-bottom:50px;">
+        <div class="container">
+            <div class="row">
+                <h1 class="title">Contact us</h1>
+                <hr class="divider" style="width:50%;">
+                <p class="text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                <!-- Section Header End -->
+
+                <div class="mts-contact-details" style="margin-top:30px;">
+
+                    <!-- Address Area End -->
+
+                    <!-- Contact Form -->
+                    <div class="col-md-6 col-sm-6 col-xs-12 mts-contact-form wow bounceInRight">
+                        <div id="contact-result"></div>
+                        <div id="contact-form">
+                            <div class="mts-input-name mts-input-fields">
+                                <input type="text" name="name" id="name" placeholder="Name">
+                            </div>
+
+                            <div class="mts-input-email mts-input-fields">
+                                <input type="email" name="email" id="email" placeholder="Email">
+                            </div>
+
+                            <div class="mts-input-message mts-input-fields">
+                                <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                            </div>
+
+                            <input type="submit" value="SEND MESSAGE" id="submit-btn">
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quasi ducimus in rerum fugiat deserunt laboriosam tempore velit, eaque provident incidunt quisquam. Qui soluta accusantium pariatur obcaecati, harum molestiae eum, repellendus.</p>
+                        <ul>
+                            <li><i class="fa fa-home"></i>01011 Road ave.</li>
+                            <li><i class="fa fa-phone"></i>(+1) 012 3456</li>
+                            <li><i class="fa fa-envelope-o"></i>john@store.com</li>
+                        </ul>
+                    </div>
+                    <!-- Contact Form End -->
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <footer class="wow fadeInUp leFooter" data-wow-delay=".8s">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-md-12">
+                        <a class="footer-logo" href="#">
+                            <img class="img-responsive logo" src="images/footer-logo.png" alt="">
+                        </a>
+                    <p>Copyright © 2016 <a href="http://gridgum.com">Gridgum</a></p>
+                    
+                </div>
+            </div>
+        </div>
+    </footer>
+</div>
+<!--fin accueil-->	
+
+</body>
+</html>
