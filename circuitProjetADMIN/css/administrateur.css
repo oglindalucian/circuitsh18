@@ -24,7 +24,9 @@ div.tdba{
 	/* margin-top:-40px; */
 }
 
-
+.fifty td {
+	width:50%;
+}
 
 @media only screen and (max-width: 450px) {
    #divEnlever, #divEnregCircuit, #divFiche{

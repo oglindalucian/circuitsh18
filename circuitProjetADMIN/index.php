@@ -46,56 +46,21 @@
 
     </head>
     <body>
-
-
-	<!-- <div id="header"> -->
-     <header>
+<div id="header">    
 	 <?php include 'menu.php';?>
-	    <!-- <nav class="navbar navbar-default navbar-fixed-top"> -->
-		  <!-- <div class="container-fluid"> -->
-			<!-- <div class="navbar-header"> -->
-			
-                <!-- <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> -->
-                    <!-- <span class="sr-only">Toggle navigation</span> -->
-                    <!-- <span class="icon-bar"></span> -->
-                    <!-- <span class="icon-bar"></span> -->
-                    <!-- <span class="icon-bar"></span> -->
-                <!-- </button> -->
-           
-			  <!-- <a class="navbar-brand" href="#"><img class="logo" src="images/logo.png" alt=""></a> -->
-			<!-- </div> -->
-			<!-- <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1"> -->
-			<!-- <ul class="nav navbar-nav"> -->
-			  <!-- <li class="active"><a href="#home">Accueil</a></li> -->
-			  <!-- <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">Services <span class="caret"></span></a> -->
-				<!-- <ul class="dropdown-menu"> -->
-				  <!-- <li><a href="#services">Nos services</a></li> -->
-				  <!-- <li><a href="#products">Nos produits</a></li> -->
-				  <!-- <li><a href="#testimonials">FAQ</a></li> -->
-				  <!-- <li><a href="#contact">Contact</a></li> -->
-				<!-- </ul> -->
-			  <!-- </li> -->
-			  <!-- <li><a href="#">Page 2</a></li> -->
-			<!-- </ul> -->
-			<!-- <ul class="nav navbar-nav navbar-right"> -->
-			  <!-- <li><a href="#"><i class="fa fa-cart-arrow-down" style="font-size:24px;color:red"></i> Panier</a></li> -->
-			  <!-- <li><a href="#" onClick="rendreVisible('admin'); rendreInvisible('accueil')"><i class="fa fa-sign-in" style="font-size:24px;color:red"></i> Connexion</a></li> -->
-			<!-- </ul> -->
-			<!-- </div> -->
-		  <!-- </div> -->
-		<!-- </nav> -->
-    </header> 
-   <!-- </div> -->
+</div>	   
+    
+
 	
 <!--start admin-->
 <div id="admin">
 	<div id="menuAdmin">
 		<br><br><br>
-		<span onClick="rendreInvisible('admin'); rendreVisible('accueil')"><i class="fa fa-close" style="font-size:36px"></i> Fermer</span>
+		<span onClick="rendreVisible('accueil'); rendreVisibleTous(); rendreInvisible('admin'); "><i class="fa fa-close" style="font-size:36px"></i> Fermer</span>
 		<h1 style="text-align: center;">TABLEAU DE BORD DE L'ADMINISTRATEUR</h1>
 				
 				<div id="management" style="text-align: center;">
-					<input type="button" value="Gestion des circuits" onClick="rendreInvisibleTous(); rendreVisible('divCircuits'); rendreVisible('menuAdmin');">  <!--rendreVisible('divCircuits'); -->
+					<input type="button" value="Gestion des circuits" onClick="rendreInvisibleTous(); rendreVisible('divCircuits'); ">  <!--rendreVisible('divCircuits'); -->
 					<input type="button" value="Gestion des usagers" onClick="rendreInvisibleTous(); rendreVisible('divUsagers');  ">
 					<input type="button" value="Gestion des rabais" onClick="rendreInvisibleTous(); rendreVisible('divRabais');  ">
 				</div>
@@ -107,9 +72,9 @@
 				<span style="text-align: right;" onClick="rendreInvisible('divCircuits')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
 				<h2>Gestion des circuits</h2>
 				<br>
-				<input type="button" value="Créer un circuit" onClick=" rendreVisible('divEnregCircuit'); rendreInvisible('divCircuits'); rendreInvisibleTous();">
-				<input type="button" value="Lister les circuits" onClick=" lister();$('#contenu').show(); rendreInvisible('divCircuits'); rendreInvisibleTous();">
-				<input type="button" value="Modifier un circuit" onClick=" rendreVisible('divFiche'); rendreInvisible('divCircuits'); rendreInvisibleTous();">
+				<input type="button" value="Créer un circuit" onClick=" rendreInvisibleTous(); rendreVisible('divEnregCircuit');  ">
+				<input type="button" value="Lister les circuits" onClick="rendreInvisibleTous(); lister(); $('#contenu').show();   ">
+				<input type="button" value="Modifier un circuit" onClick="rendreInvisibleTous(); rendreVisible('divFiche');   ">
 				<br>
 				<br>
 			</div>
@@ -120,9 +85,9 @@
 				<span style="text-align: right;" onClick="rendreInvisible('divUsagers')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
 				<h2>Gestion des usagers</h2>
 				<br>
-				<input type="button" value="Lister les usagers(R)" onClick="rendreInvisible('divUsagers'); rendreInvisibleTous();">
-				<input type="button" value="Réactiver un usager(U)" onClick="rendreInvisible('divUsagers'); rendreInvisibleTous();">
-				<input type="button" value="Désactiver un usager(U)" onClick="rendreInvisible('divUsagers'); rendreInvisibleTous();">
+				<input type="button" value="Lister les usagers(R)" onClick="rendreInvisibleTous(); rendreInvisible('divUsagers'); ">
+				<input type="button" value="Réactiver un usager(U)" onClick="rendreInvisibleTous(); rendreInvisible('divUsagers'); ">
+				<input type="button" value="Désactiver un usager(U)" onClick="rendreInvisibleTous(); rendreInvisible('divUsagers'); ">
 				<br>
 				<br>
 			</div>
@@ -133,9 +98,9 @@
 				<span style="text-align: right;" onClick="rendreInvisible('divRabais')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
 				<h2>Gestion des rabais</h2>
 				<br>
-				<input type="button" value="Enregistrer un rabais(C)" onClick="rendreInvisible('divRabais'); rendreInvisibleTous();">
-				<input type="button" value="Lister les rabais(R)" onClick="rendreInvisible('divRabais'); rendreInvisibleTous();">
-				<input type="button" value="Désactiver un rabais(U)" onClick="rendreInvisible('divRabais'); rendreInvisibleTous();">
+				<input type="button" value="Enregistrer un rabais(C)" onClick="rendreInvisibleTous(); rendreInvisible('divRabais'); ">
+				<input type="button" value="Lister les rabais(R)" onClick="rendreInvisibleTous(); rendreInvisible('divRabais'); ">
+				<input type="button" value="Désactiver un rabais(U)" onClick="rendreInvisibleTous(); rendreInvisible('divRabais'); ">
 				<br>
 				<br>
 			</div>
@@ -144,12 +109,12 @@
 			<!-- FORMULAIRES -->
 			
 		<div id="divEnregCircuit">
-			<div class="container">
+			
 				<form id="formEnregCircuit">
 					<br>
 					<span onClick="rendreInvisible('divEnregCircuit')">FERMER <i class="fa fa-close" style="font-size:16px"></i></span>
 					<h3>Créer un circuit</h3><br>
-					<table border=0 class="table-striped table-hover table-responsive">
+					<table border=0 class="table-striped table-hover table-responsive fifty">
 						<tr><td><label for="nomCircuit">Nom du circuit: </label></td><td><input type="text" id="nomCircuit" name="nomCircuit"></td></tr>
 						<tr><td><br></td><td><br></td></tr>
 						<tr><td><label for="nbPlacesMinimum">Nombre minimum de places: </label></td><td><input type="text" id="nbPlacesMinimum" name="nbPlacesMinimum"></td></tr>
@@ -175,7 +140,7 @@
 								<input type="button" value="Ajouter une étape" onClick=" ajouterEtape(); "></td></tr>
 						<tr><td><br></td><td><br></td></tr>
 					</table>
-			</div>
+			
 		</div>
 			
 			<div id="divFiche">
