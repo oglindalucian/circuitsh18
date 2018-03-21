@@ -7,32 +7,41 @@ function rendreInvisible(elem){
 }
 
 function rendreInvisibleTous() {
-	//$(document).ready(function() {
-		 var lesDivs = document.getElementsByTagName("div");
+	$(document).ready(function() {
+		
+		// var lesDivs = document.getElementsByTagName("div");
+		 $( "div" ).each(function( index ) {
+		 // alert( "id: " + $( this ).attr('id') );
+		  var leId = $( this ).attr('id');
+		  if(leId=="menuAdmin" && leId=="management") {
+				//rendreInvisible(leId);
+				alert(leId);
+		  }
+		});
 		// var leTexte = "";
 		// var id4 = lesDivs[4].id;
 		// for(var i=0; i<lesDivs.length; i++) {
-		for(x in lesDivs) {
-		  var leId = x.id;
+		// for(x in lesDivs) {
+		  // var leId = x.id;
 		  
-		 // leTexte+=leId+"/---/";
-		// rendreInvisible(leId);
-		 //document.getElementById(leId).style.display='none';
-			 // // alert(leId);
-		  if(leId!="menuAdmin" && leId!="management") {
-				//rendreInvisible(leId);
-				//document.getElementById(leId).style.display='none';
-				// // alert(leId);
-				//leTexte+=id4+"/---/";
-			  }
+		 // // leTexte+=leId+"/---/";
+		// // rendreInvisible(leId);
+		 // //document.getElementById(leId).style.display='none';
+			 // // // alert(leId);
+		  // if(leId!="menuAdmin" && leId!="management") {
+				// //rendreInvisible(leId);
+				// //document.getElementById(leId).style.display='none';
+				// // // alert(leId);
+				// //leTexte+=id4+"/---/";
+			  // }
 			
-		  }
+		  // }
 		 // document.getElementById("contenu").innerHTML = leTexte;
 		//rendreVisible('header');
 		//document.getElementById('header').style.display='block';
 		//rendreVisible('menuAdmin');
 		//document.getElementById('menuAdmin').style.display='block';
-	//});
+	});
 }
 
 function validerNum(elem){

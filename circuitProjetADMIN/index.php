@@ -234,7 +234,7 @@
 <div id="accueil">
     <section id="home">
         <div class="container">
-
+		<!--start carousel-->
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 
             <ol class="carousel-indicators">
@@ -343,6 +343,7 @@
 
         </div>
         </div>
+		<!--fin carousel-->
     </section>
 
 
@@ -394,7 +395,7 @@
                     </div>
                 </div>
             </div>
-        </div>
+        
     </section>
 
 
@@ -410,28 +411,31 @@
             <h1 class="title">Produits</h1>
             <hr class="divider" style="width:50%;">
             <h2 class="text-center">Découvrez nos circuits:</h2>
-            <div class="row" style="margin-top:40px;">
-                <div class="col-sm-3 wow fadeInLeft product" data-wow-delay=".8s">
-                    <img src="images/products/1.jpg" alt="iPhone 6" class="img-responsive">
+            
+			
+			<div class="row" style="margin-top:40px;">
+                <div class="col-sm-6 wow fadeInLeft product" data-wow-delay=".8s">
+                    <img src="images/UK-French-Flags-1.jpg" alt="iPhone 6" class="img-responsive presentationCircuit">
                     <div class="product-info">
                         <div class="col-sm-8">
-                            <h4>iPhone 6S</h4>
-                            <p>New, brilliant, simple</p>
+                            <h4>Europe du Nord-Ouest</h4>
+                            <p>France, Grande Bretagne</p>
                         </div>
-                        <div class="col-sm-4 price">500 $</div>
+                        <div class="col-sm-4 price">5000 $</div>
                         <div class="clear"></div>
                         <ul class="product-btns">
                             <li>
-                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Détails</a>
                             </li>
                             <li>
-                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> RÉSERVEZ</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3 wow fadeInDown product" data-wow-delay=".8s">
-                    <img src="images/products/2.jpg" alt="iPhone 6" class="img-responsive">
+				
+                <div class="col-sm-6 wow fadeInDown product" data-wow-delay=".8s">
+                    <img src="images/IMG_6344-ni33qznx5au8mkl0d1uey2sw207i68sy2oarn5kdo0.jpg" alt="iPhone 6" class="img-responsive">
                     <div class="product-info">
                         <div class="col-sm-8">
                             <h4>Samsung Galaxy S6</h4>
@@ -449,8 +453,11 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3 wow fadeInDown product" data-wow-delay=".8s">
-                    <img src="images/products/3.jpg" alt="iPhone 6" class="img-responsive">
+			</div>
+			
+			<div class="row" style="margin-top:40px;">	
+                <div class="col-sm-6 wow fadeInDown product" data-wow-delay=".8s">
+                    <img src="images/ZSL-London-Zoo.jpg" alt="iPhone 6" class="img-responsive">
                     <div class="product-info">
                         <div class="col-sm-8">
                             <h4>Sony Xperia Z5</h4>
@@ -468,7 +475,8 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3 wow fadeInRight product" data-wow-delay=".8s">
+				
+                <div class="col-sm-6 wow fadeInRight product" data-wow-delay=".8s">
                     <img src="images/products/4.jpg" alt="iPhone 6" class="img-responsive">
                     <div class="product-info">
                         <div class="col-sm-8">
@@ -487,83 +495,53 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-3 wow fadeInLeft product" data-wow-delay=".8s">
-                    <img src="images/products/5.jpg" alt="iPhone 6" class="img-responsive">
-                    <div class="product-info">
-                        <div class="col-sm-8">
-                            <h4>Xbox One</h4>
-                            <p>Console by Microsoft</p>
-                        </div>
-                        <div class="col-sm-4 price">540 $</div>
-                        <div class="clear"></div>
-                        <ul class="product-btns">
-                            <li>
-                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 wow fadeInUp product" data-wow-delay=".8s">
-                    <img src="images/products/6.jpg" alt="iPhone 6" class="img-responsive">
-                    <div class="product-info">
-                        <div class="col-sm-8">
-                            <h4>iPhone Charger</h4>
-                            <p>Accessory product</p>
-                        </div>
-                        <div class="col-sm-4 price">20 $</div>
-                        <div class="clear"></div>
-                        <ul class="product-btns">
-                            <li>
-                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 wow fadeInUp product" data-wow-delay=".8s">
-                    <img src="images/products/7.jpg" alt="iPhone 6" class="img-responsive">
-                    <div class="product-info">
-                        <div class="col-sm-8">
-                            <h4>ROG laptop</h4>
-                            <p>Notebook from ASUS</p>
-                        </div>
-                        <div class="col-sm-4 price">1500 $</div>
-                        <div class="clear"></div>
-                        <ul class="product-btns">
-                            <li>
-                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-                <div class="col-sm-3 wow fadeInRight product" data-wow-delay=".8s">
-                    <img src="images/products/8.jpg" alt="iPhone 6" class="img-responsive">
-                    <div class="product-info">
-                        <div class="col-sm-8">
-                            <h4>iMac</h4>
-                            <p>New PC from Apple</p>
-                        </div>
-                        <div class="col-sm-4 price">3500 $</div>
-                        <div class="clear"></div>
-                        <ul class="product-btns">
-                            <li>
-                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
-                            </li>
-                            <li>
-                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
+			</div>
 
+			<div class="row" style="margin-top:40px;">	
+                <div class="col-sm-6 wow fadeInDown product" data-wow-delay=".8s">
+                    <img src="images/products/3.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>Sony Xperia Z5</h4>
+                            <p>For all taste</p>
+                        </div>
+                        <div class="col-sm-4 price">487 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+				
+                <div class="col-sm-6 wow fadeInRight product" data-wow-delay=".8s">
+                    <img src="images/products/4.jpg" alt="iPhone 6" class="img-responsive">
+                    <div class="product-info">
+                        <div class="col-sm-8">
+                            <h4>PlayStation 4</h4>
+                            <p>Gaming console by Sony</p>
+                        </div>
+                        <div class="col-sm-4 price">560 $</div>
+                        <div class="clear"></div>
+                        <ul class="product-btns">
+                            <li>
+                                <a href="#" class="btn btn-default btn-grey"> <i class="fa fa-list"></i> Details</a>
+                            </li>
+                            <li>
+                                <a href="#" class="btn btn-default btn-red-o"><i class="fa fa-shopping-cart"></i> BUY NOW</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+			</div>
+				
+			
+			
+			
                 <div class="text-center">
                     <ul class="pagination pagination-lg wow fadeInUp" data-wow-delay="1.1s">
                         <li class="active"><a href="#">1</a></li>
@@ -577,7 +555,7 @@
                     </ul>
                 </div>
             </div>
-        </div>
+       
     </section>
 
 
@@ -693,6 +671,7 @@ Pour vos questions relatives à un voyage, un projet de développement ou simple
 
 <?php include 'footer.php';?>
    
+</div>
 </div>
 <!--fin accueil-->	
 

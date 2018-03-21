@@ -24,6 +24,8 @@ div.tdba{
 	/* margin-top:-40px; */
 }
 
+
+
 @media only screen and (max-width: 450px) {
    #divEnlever, #divEnregCircuit, #divFiche{
         top: 70%;
